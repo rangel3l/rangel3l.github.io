@@ -263,7 +263,7 @@ body {
     position: absolute;
     height: 1000px;
     width: 400px;
-    left: 900px;
+    left: 65%;
     top: 200px;;
     
     
@@ -312,7 +312,7 @@ table{
     height: 300px;
     width: 400px;
     position: absolute;
-    left:400px;
+    left:28%;
     top:300px;
 
 }
@@ -337,7 +337,7 @@ table{
     line-height: 40px;
     font-size: 14px;
     background-color:black;
-    left: 300px;
+    left: 20%;
     
  } 
 
