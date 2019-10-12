@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    background-size: 100%;
+    font-size: 100%;
+}
+
+body {
+    font: 1em/150% Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0b5ee3;
+    
+
+}
+a{
+    text-decoration: none;
+    
+    border: none;
+
+
+}
+
+
+   
+
+ 
+    
+
+ 
+.layouthead{
+    position: relative;
+    background-color:#397be6;
+    height: 137px;
+    width:100%; 
+    background-size: 100%;
+   
+    
+
+}
+#logo{
+    position: absolute;
+    left: 300px;
+    z-index: 1; 
+    height:137px;
+    width: 137px;
+}
+#escolamode{
+    height:128px;
+    width: 170px;
+}
+
+#kda{
+    position: absolute;
+    z-index: 1;
+    left: 900px;
+    top: 50px;
+    
+
+}
+#textsearch{
+    background-color: white;
+    height: 23px;
+    border: #0b5ee3;
+}
+
+.btn_search{
+    width:30px;
+    height: 28px;
+    background-color: #2f4550;
+    padding: 5px;
+    cursor: pointer;
+}
+.search_login{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    background-color:  #0b5ee3;
+    z-index: 1;
+    top: 1000px;
+    
+}

@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    background-size: 100%;
+    font-size: 100%;
+}
+
+body {
+    font: 1em/150% Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0b5ee3;
+    
+
+}
+   
+ 
+.layouthead{
+    position: relative;
+    background-color:#397be6;
+    height: 137px;
+    width:100%; 
+    background-size: 100%;
+   
+}
+#logo{
+    position: absolute;
+    left: 300px;
+    z-index: 1; 
+    height:137px;
+    width: 137px;
+}
+#escolamode{
+    height:128px;
+    width: 170px;
+}
+
+#kda{
+    position: absolute;
+    z-index: 1;
+    left: 900px;
+    top: 50px;
+    
+
+}
+#textsearch{
+    background-color: white;
+    height: 23px;
+    border: #0b5ee3;
+}
+
+.btn_search{
+    width:30px;
+    height: 28px;
+    background-color: #2f4550;
+    padding: 5px;
+    cursor: pointer;
+}
+.search_login{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    background-color:  #0b5ee3;
+    z-index: 1;
+    top: 1000px;
+    
+}
+.cadastro ul li{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color:#0b5ee3;;
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 170px;
+    top: -40px;
+    z-index: 1;
+    font-size: 14px;
+    line-height:40px;
+
+}
+.cadastro ul{
+    padding: 0px;
+}
+    .cadastro ul ul{
+        position: absolute;
+        top: 80px;
+        z-index: 1;
+        display: none;
+        margin-left: -170px;
+    } 
+ 
+
+    
+    
+
+.cadastro ul li:hover > ul{
+    display: block;
+}
+.cadastro ul li:hover{
+    background-color: #052963;
+
+}
+.cadastro a{
+    text-decoration: none;
+    color: white;
+}
+
+.circulo{
+		width:80px;
+		height:80px;
+		border-radius:50%;
+		border:3px solid #0b5ee3;
+		z-index:5;
+		background:#0b5ee3;
+        position: absolute;
+        left: -900px;
+        top: -30px;
+        }
+.circulo:hover{
+    background-color:#052963 ;
+}
+.img{   
+        position: absolute;
+	    z-index:1;
+	    width:40px;
+        height:80px;
+        background-position:center;
+        left: 25px;
+        top:15px;
+		
+        }
+
+ #img_home{
+      width:20px;
+      height:40px;
+
+
+ }
