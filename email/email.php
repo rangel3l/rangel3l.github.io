@@ -16,7 +16,7 @@ $body = "mensagem:".$mensagem. "/r/n";
 $header = "from:rangel-3l@gmail.com" . 
 "/r/n"."Reply-to:".$email. "/r/n";
 "X=Mailer:PHP/".phpversion();
-if(mail($to,$subject,$body,$header)){
+if(mail ($to,$subject,$body,$header){
 echo("email enviado com sucesso");
 }else( "email não pode ser enviado");
 
