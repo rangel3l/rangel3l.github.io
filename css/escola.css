@@ -26,20 +26,20 @@ body {
 }
 #logo{
     position: absolute;
-    left: 300px;
+    left: 20%;
     z-index: 1; 
-    height:137px;
-    width: 137px;
+    height:98%;
+    width: 20%;
 }
 #escolamode{
-    height:128px;
-    width: 170px;
+    height:90%;
+    width: 97%;
 }
 
 #kda{
     position: absolute;
     z-index: 1;
-    left: 900px;
+    left: 67%;
     top: 50px;
     
 
@@ -51,8 +51,8 @@ body {
 }
 
 .btn_search{
-    width:30px;
-    height: 28px;
+    width:13%;
+    height: 30%;
     background-color: #2f4550;
     padding: 5px;
     cursor: pointer;
@@ -214,26 +214,27 @@ body {
     
 }
 .news_content1{
-   top: 100px;
+    top: 100px;
     position:absolute;
     border: #0b5ee3 3px solid;
     height: 300px;
     text-indent: 4px;
-    width: 300px;
-
+    width: 23%;
+    border: thick  groove  #0b5ee3;
 }
 .news_content2{
-   top: 440px;
+    top: 440px;
     position:absolute;
+    border: thick  groove  #0b5ee3;
     border: #0b5ee3 3px solid;
     height: 300px;
     text-indent: 4px;
-    width: 300px;
+    width: 23%;
 
 
 }
 #censo_escolar{
-        width:290px;
+        width:98%;
         height: 180px; 
 
     }
