@@ -14,6 +14,7 @@ body {
     
 
 }
+
    
  
 .layouthead{
@@ -157,6 +158,7 @@ body {
     text-align: center;
     line-height: 40px;
     font-size: 14px;
+    max-width: ;
   
 }
 
@@ -204,35 +206,46 @@ body {
     top: 40px;
     position: relative;
     width:100%;
-    height: 1000px;
+    height: 1600px;
     background-color: #edf4fa;
+   
 
-
+}
+.body_content2{
+    width: 60%;
+    height: 60%;
+    background-color: #c8d1e8;
+    top: 35%;
+    position: absolute;
 }
 .news_title{
     text-align: center;
     border-bottom: 3px solid #0b5ee3;
     position:absolute;
-    left: 20px;;
+    left: 0%;
+    top: 0%;
+    width: 100%;
     
 }
 .news_content1{
-    top: 100px;
+    left: 2%;
+    top: 10%;
     position:absolute;
-    border: #0b5ee3 3px solid;
+    
     height: 300px;
     text-indent: 4px;
-    width: 23%;
-    border: thick  groove  #0b5ee3;
+    width: 40%;
+    
 }
 .news_content2{
-    top: 440px;
+    left: 50%;
+    top: 10%;
     position:absolute;
-    border: thick  groove  #0b5ee3;
-    border: #0b5ee3 3px solid;
+    
+    
     height: 300px;
     text-indent: 4px;
-    width: 23%;
+    width: 40%;
 
 
 }
@@ -245,17 +258,17 @@ body {
     text-align: center;
     border-bottom: 3px solid #0b5ee3;
     position:absolute;
-    left: 27%;
-    top: 48%;
-    width: 30%;
+    left: 0%;
+    top: 50%;
+    width: 100%;
    
     
  }  
  .video_content{
      position: absolute;
-      top: 55%;
-      left: 27%;
-      width: 30%;
+      top: 60%;
+      left: 25%;
+      width: 50%;
 
 
  }
@@ -269,7 +282,7 @@ body {
     height: 80%;
     width: 30%;
     left: 65%;
-    top: 200px;;
+    top: 50px;
     
     
 }
@@ -314,11 +327,16 @@ table{
 }
 
 #myCarousel{
-    height: 300px;
-    width: 30%;
+    height: 65%;
+    width: 55%;
     position: absolute;
-    left:28%;
+    left:2%;
     top:45%;
+
+}
+.carousel-inner{
+    height: 100%;
+    width: 60%;
 
 }
 .foot{
@@ -326,6 +344,8 @@ table{
     width: 100%;
     height: 300px;
     background-color: #0b5ee3;
+    
+    
 }
  
 
@@ -343,6 +363,7 @@ table{
     font-size: 14px;
     background-color:black;
     left: 20%;
+  
     
  } 
 
