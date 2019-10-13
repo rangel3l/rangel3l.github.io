@@ -43,7 +43,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 67%;
-    top: 50px;
+    top: 40%;
     
 
 }
@@ -66,12 +66,12 @@ body {
 .cadastro ul li{
     display: block;
     width: 100%;
-    height: 40px;
+    height: 10%;
     background-color:#0b5ee3;;
     text-align: center;
     position: relative;
     float: left;
-    left: 170px;
+    left: 100%;
     top: -40px;
     z-index: 1;
     font-size: 14px;
@@ -87,7 +87,8 @@ body {
         top: 80px;
         z-index: 1;
         display: none;
-        margin-left: -170px;
+        margin-left: -100%;
+        
     } 
  
 
@@ -107,8 +108,8 @@ body {
 }
 
 .circulo{
-		width:80px;
-		height:80px;
+		width:50%;
+		height:100%;
 		border-radius:50%;
 		border:3px solid #0b5ee3;
 		z-index:5;
@@ -123,11 +124,11 @@ body {
 .img{   
         position: absolute;
 	    z-index:1;
-	    width:40px;
-        height:80px;
+	    width:40%;
+        height:100%;
         background-position:center;
-        left: 25px;
-        top:15px;
+        left: 35%;
+        top:20%;
 		
         }
 
@@ -136,6 +137,10 @@ body {
       height:40px;
 
 
+ }
+ .menu {
+     width: 100%;
+     
  }
  
  
@@ -146,7 +151,7 @@ body {
     background-color: #0b5ee3;
     color: white;
     float: left;
-    width: 200px;
+    width: 260px;
     height: 40px;
     display: block;
     text-align: center;
@@ -261,7 +266,7 @@ body {
 .produtos{
     
     position: absolute;
-    height: 1000px;
+    height: 80%;
     width: 30%;
     left: 65%;
     top: 200px;;
@@ -313,7 +318,7 @@ table{
     width: 30%;
     position: absolute;
     left:28%;
-    top:300px;
+    top:45%;
 
 }
 .foot{
