@@ -22,8 +22,8 @@ body {
     height: 137px;
     width:100%; 
     background-size: 100%;
-    min-width: 768px;
-    max-width: 1360px;
+    min-width: 168px;
+    max-width: 100%;
 
    
 }
@@ -237,31 +237,32 @@ body {
 
     }
  .video_title{
-     text-align: center;
+    text-align: center;
     border-bottom: 3px solid #0b5ee3;
     position:absolute;
-    left: 430px;
-    top: 410px;
-    width: 400px;
+    left: 27%;
+    top: 48%;
+    width: 30%;
    
     
  }  
  .video_content{
      position: absolute;
-      top: 500px;
-      left: 30%;
+      top: 55%;
+      left: 27%;
+      width: 30%;
 
 
  }
  #video_size{
-     width: 400px;
+     width: 100%;
  }
   
 .produtos{
     
     position: absolute;
     height: 1000px;
-    width: 400px;
+    width: 30%;
     left: 65%;
     top: 200px;;
     
@@ -270,12 +271,12 @@ body {
 .title_table{
  
 text-align: center;
-width: 400px;
+width: 100%;
 position: absolute;
 background-color: #0b5ee3; 
 color: white;
 text-align: center;
-top: 80px;
+top: 8%;
     
 }
 .table_products tr img:hover{
@@ -288,28 +289,28 @@ table{
     border: 3px solid #0b5ee3;
     background-color:7c95aa; 
     color: black;
-    top: 80px;
+    top: 100%;
 }
 .table_products{
     position:absolute;
-    height: 100px;
+    height: 20%;
     width: 100%;
     
 
 }
 .products_size{
-    width: 180px;
-    height: 150px;
+    width: 60%;
+    height: 25%;
  
 }
 
 .products_item{
-    padding:20px;
+    padding:3%;
 }
 
 #myCarousel{
     height: 300px;
-    width: 400px;
+    width: 30%;
     position: absolute;
     left:28%;
     top:300px;
@@ -329,8 +330,8 @@ table{
     z-index: 1;
     position: relative;
     float: left;
-    width: 200px;
-    height: 40px;
+    width: 15%;
+    height: 10%;
     display: block;
     text-align: center;
     line-height: 40px;
