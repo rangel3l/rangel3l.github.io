@@ -10,7 +10,6 @@ body {
     font: 1em/150% Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #0b5ee3;
     
 
 }
@@ -45,7 +44,8 @@ body {
     position: absolute;
     z-index: 1;
     left: 67%;
-    top: 40%;
+    top: 35%;
+    width: 20%;
     
 
 }
@@ -56,25 +56,28 @@ body {
 }
 
 .btn_search{
-    width:13%;
-    height: 30%;
+    position: absolute;
+    width:12%;
+    height: 25px;
     background-color: #2f4550;
-    padding: 3%;
+    padding: 0px;
     cursor: pointer;
+    top: 0px;
+    
 }
 
  .cadastro {
      position: relative;
      width: 10%;
-     height: 10%;
-     left:80% ;
+     height: 8%;
+     left:85% ;
      top: -70%;
  }   
 
 .cadastro ul li{
     display: block;
     width: 100%;
-    height: 10%;
+    height: 8%;
     background-color:#0b5ee3;;
     text-align: center;
     position: relative;
@@ -116,8 +119,8 @@ body {
 
 .circulo{
        
-		width:70px;
-		height:80px;
+		width:50px;
+		height:50px;
 		border-radius:50%;
 		border:3px solid #0b5ee3;
 		background:#0b5ee3;
@@ -142,9 +145,9 @@ body {
  #img_home{
       width:50%;
       height:70%;
-
-
  }
+
+ 
  .menu {
      width: 250%;
      
@@ -265,6 +268,7 @@ body {
         width:98%;
         height: 180px; 
 
+
     }
  .video_title{
     text-align: center;
@@ -344,11 +348,26 @@ table{
     position: absolute;
     left:2%;
     top:45%;
+      min-width: 168px;
+    max-width: 100%;
+
 
 }
 .carousel-inner{
     height: 100%;
     width: 60%;
+      min-width: 168px;
+    max-width: 100%;
+
+
+
+}
+.carousel_image{
+     height: 100%;
+    width: 100%;
+      min-width: 168px;
+    max-width: 100%;
+
 
 }
 .foot{
@@ -382,7 +401,7 @@ table{
 .foot ul{
     top: 4px;
     padding: 0;
-}
+} 
 .foot a{
     text-decoration:none;
     color: white;
