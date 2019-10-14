@@ -29,7 +29,8 @@ body {
    
 }
 #logo{
-    position: absolute;
+    top: 2%;
+    position: relative;
     left: 30%;
     z-index: 1; 
     height:98%;
@@ -67,7 +68,7 @@ body {
      width: 10%;
      height: 10%;
      left:80% ;
-     top: 35%;
+     top: -70%;
  }   
 
 .cadastro ul li{
@@ -78,7 +79,7 @@ body {
     text-align: center;
     position: relative;
     float: left;
-    z-index: 99;
+    z-index: 2;
     font-size: 14px;
     line-height:40px;
 
@@ -86,6 +87,7 @@ body {
 .cadastro ul{
     padding: 0px;
     width: 100%;
+    z-index: 99;
 }
     .cadastro ul ul{
         position: absolute;
@@ -113,15 +115,15 @@ body {
 }
 
 .circulo{
-		width:50%;
-		height:100%;
+       
+		width:70px;
+		height:80px;
 		border-radius:50%;
 		border:3px solid #0b5ee3;
-		z-index:5;
 		background:#0b5ee3;
-        position: absolute;
-        left: -900px;
-        top: -30px;
+        position: relative;
+        left: 0%;
+        top: -100%
         }
 .circulo:hover{
     background-color:#052963 ;
@@ -144,19 +146,20 @@ body {
 
  }
  .menu {
-     width: 100%;
+     width: 250%;
      
  }
  
  
 
 .menu ul li{
-    z-index: 6;
+    left: -130px;
+    z-index: 1;
     position: relative;
     background-color: #0b5ee3;
     color: white;
     float: left;
-    width: 268px;
+    width: 265px;
     height: 40px;
     display: block;
     text-align: center;
@@ -179,6 +182,9 @@ body {
 }
 .menu ul ul{
     display: none;
+    left: 128px;
+    position: absolute;
+    top: 100%;
 
 }
 .menu ul li:hover > ul{
@@ -187,11 +193,13 @@ body {
 }
 .menu ul ul ul{
     color: #397be6;
-    margin-left: 201px;
+    margin-left: 268px;
     top:0px;
     position: absolute;
     z-index: 1;
-    display: none
+    display: none;
+
+    
 }
 .menu ul ul li:hover{
     background-color: #083580;
