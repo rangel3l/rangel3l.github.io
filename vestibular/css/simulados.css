@@ -46,8 +46,6 @@ body {
     left: 67%;
     top: 35%;
     width: 20%;
-    
-
 }
 #textsearch{
     background-color: white;
@@ -71,7 +69,7 @@ body {
      width: 10%;
      height: 8%;
      left:85% ;
-     top: -65%;
+     top: -70%;
  }   
 
 .cadastro ul li{
@@ -116,6 +114,7 @@ body {
     text-decoration: none;
     color: white;
 }
+
 
 .circulo{
        
