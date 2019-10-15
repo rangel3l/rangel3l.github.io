@@ -198,12 +198,23 @@ body {
     position: relative;
     font-size: 14px;
     line-height:40px;
+     font-size: 17px;
+     
  }
+ .size_title{
+     color: black;
+     font-size: 20px;
+     border: 2px solid white;
+ }
+ 
+  .provas_bar ul {
+      padding: 0px;
+      font-size: 20px;}
  .provas_bar ul ul {
      
         position: absolute;
         
-        
+           font-size: 30px;
         display: none;
         margin-left: 0%;
     }
@@ -224,6 +235,7 @@ body {
  .provas_bar a{
      text-decoration: none;
      color: white;
+
  }
 .produtos{
      border-radius: 5px;
