@@ -71,10 +71,12 @@ body {
      width: 10%;
      height: 8%;
      left:85% ;
-     top: -70%;
+     top: -73%;
  }   
 
 .cadastro ul li{
+    border-radius: 25px;
+    padding: 2px;
     display: block;
     width: 100%;
     height: 8%;
@@ -293,24 +295,29 @@ body {
  }
   
 .produtos{
-    
+     border-radius: 5px;
+     padding: 5px;
     position: absolute;
-    height: 80%;
+    height: 50%;
     width: 30%;
-    left: 65%;
-    top: 50px;
+    left: 66%;
+    top: 6%;
+    background-color: #94ccf2;
+    
     
     
 }
 .title_table{
- 
+    left: 0px;
+ border-radius: 5px;
+ padding: 5px;
 text-align: center;
 width: 100%;
 position: absolute;
 background-color: #0b5ee3; 
 color: white;
 text-align: center;
-top: 8%;
+top: -20px;
     
 }
 .table_products tr img:hover{
@@ -320,10 +327,10 @@ table{
     position: absolute;
     text-align: center;
     border-collapse: collapse;
-    border: 3px solid #0b5ee3;
+ 
     background-color:7c95aa; 
     color: black;
-    top: 100%;
+    top: 130%;
 }
 .table_products{
     position:absolute;
