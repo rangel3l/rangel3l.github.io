@@ -1,8 +1,6 @@
 *{
     padding: 0px;
     margin: 0px;
-    
-    background-size: 100%;
     font-size: 100%;
 }
 
@@ -10,7 +8,6 @@ body {
     font: 1em/150% Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #f2feff;
     
 
 }
@@ -148,114 +145,107 @@ body {
  #img_home{
       width:50%;
       height:70%;
- }
-.title_body{
-    left: 2%;
-    border-radius: 3px;
-    padding: 3px;
-    background-color:#0b5ee3; 
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    width: 800px;
-     top: 165px;
-    color: white;
 
-}
+ }
+ 
  .overflow_out{
-     left: -110px;
-     top: 170px;
+     height: 550px;
+     width: 40%;
      position: relative;
-     width:800px; 
-     height:800px;
-     background-color:#dee6fa; 
+     background-color: #edf4fa;
+     border-radius:2% ;
+     padding: 2%;
+     -webkit-transform: translate(3%,15%);
+     transform: translate(3%,15%);
      overflow: scroll;
+    
+     left: -10%;
+     }
 
 
-
- }
- .provas_menu{
-     position: absolute;
+.overflow_in{
+    height: 550px;
+    position: relative;
+    background-color: #dee6fa;
+    left: 47%;
+    border-radius:2% ;
+     padding: 2%;     
+     width: 6%;
+     overflow: scroll;
+     -webkit-transform: translate(18%,85%);
+     transform: translate(-18%,-85%);
+}
+.provas_menu{
      padding: 2px;
      border-radius: 2px;
      background-color: white;
-     left: 85%;
-     width: 150px;
-    
+     left: 84%;
+     width: 155px;
+     position: relative;
      top: 0%;
      height: 100%;
      border: black;
     
     
  }
+ .provas_bar a{
+     text-decoration: none;
+     color: white;}
  .provas_bar ul li{
      
  
    
     display: block;
-    width: 80%;
+    width: 150%;
     height: 8%;
-    background-color:#0b5ee3;;
+    background-color:#0b5ee3;
     text-align: center;
-    
+    position: relative;
     font-size: 14px;
     line-height:40px;
      font-size: 17px;
+     left: -18%;
+     top: -10%;
+      -webkit-transform: translate(0%,-25%);
+     transform: translate(0%,-25%);
      
- }
- .size_title{
-     color: black;
-     font-size: 20px;
-     border: 2px solid white;
- }
- 
-  .provas_bar ul {
-      padding: 0px;
-      font-size: 20px;}
- .provas_bar ul ul {
-     
-        position: absolute;
-        
-           font-size: 30px;
-        display: none;
-        margin-left: 0%;
-    }
-
- 
- .overflow_in{
-     overflow: scroll;
-     left: -437%;
-     width: 437%;
-     height: 1150px;
-     background-color: #edf4fa;
-     position: relative;
-     top: -1183px;
-     
-
-
  }
  .provas_bar a{
-     text-decoration: none;
+     text-decoration:none;
      color: white;
 
  }
+ .title_body{
+    left: 2%;
+    border-radius: 3px;
+    padding: 3px;
+    background-color:#0b5ee3; 
+    text-align: center;
+    font-size: 17px;
+    position: absolute;
+    width: 53%;
+     top: 25%;
+    color: white;}
+    
 .produtos{
+
      border-radius: 5px;
      padding: 5px;
-    position: absolute;
-    height: 120%;
+    position: relative;
+    height: 620px;
     width: 20%;
-    left: 900px;
-    top: 57%;
+    left: 66%;
     background-color: #94ccf2;
     text-align: justify;
-    
+    -webkit-transform: translate(0%,-190%);
+     transform: translate(0%,-190%);
+     
     
     
 }
 .title_table{
-    height: 3%;
-    left: -5px;
+height: 3%;
+left: -5px;
  border-radius: 5px;
  padding: 5px;
 text-align: center;
@@ -274,10 +264,8 @@ table{
     position: absolute;
     text-align: center;
     border-collapse: collapse;
- 
-    background-color:7c95aa; 
     color: black;
-    top: 130%;
+   
 }
 .table_products{
     position:absolute;
@@ -287,8 +275,8 @@ table{
 
 }
 .products_size{
-    width: 60%;
-    height: 25%;
+    width: 40%;
+    height: 15%;
  
 }
 
@@ -297,12 +285,13 @@ table{
 }
 
 .foot{
-    top: 200px;;
-    position: relative;
-    width: 100%;
-    height: 300px;
+    -webkit-transform: translate(0%,-100%);
+     transform: translate(0%,-100%);
+    position: relative;   
+    height: 150px;
     background-color: #0b5ee3;
-    
+    width: 100%;
+        
     
 }
  
