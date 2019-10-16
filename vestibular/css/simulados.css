@@ -4,13 +4,14 @@
     
     background-size: 100%;
     font-size: 100%;
+    
 }
 
 body {
     font: 1em/150% Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #edf4fa;
+    background-color: #edddc5;
     
 
 }
@@ -260,17 +261,7 @@ body {
     width: 30%;
     left: 900px;
     top: 300px;
-    background-color: #94ccf2;}
-
-    @media screen and (max-width: 300px) {
-  .produtos {
-    background-color: olive;
-    color: white;
-    float: right;
-    top: 800px;
-        }
-        
-    }
+    background-color: #94ccf2;
     
     
     
