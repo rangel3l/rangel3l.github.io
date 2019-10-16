@@ -10,6 +10,7 @@ body {
     font: 1em/150% Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    background-color: #edf4fa;
     
 
 }
@@ -259,14 +260,24 @@ body {
     width: 30%;
     left: 900px;
     top: 300px;
-    background-color: #94ccf2;
+    background-color: #94ccf2;}
+
+    @media screen and (max-width: 300px) {
+  .produtos {
+    background-color: olive;
+    color: white;
+    float: right;
+    top: 800px;
+        }
+        
+    }
     
     
     
 }
 
     
-}
+
 .table_products tr img:hover{
     background-color: #0b5ee3;
 }
