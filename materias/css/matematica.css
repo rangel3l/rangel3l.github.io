@@ -1,46 +1,87 @@
 *{
     padding: 0px;
     margin: 0px;
+
     
     background-size: 100%;
     font-size: 100%;
+    
+  
+     
 }
 
 body {
     font: 1em/150% Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #0b5ee3;
+    height: 100%;
     
 
 }
-   
- 
-.layouthead{
-    position: relative;
-    background-color:#397be6;
-    height: 137px;
-    width:100%; 
-    background-size: 100%;
-   
-}
-#logo{
-    position: absolute;
-    left: 300px;
-    z-index: 1; 
-    height:137px;
-    width: 137px;
-}
-#escolamode{
-    height:128px;
-    width: 170px;
-}
 
-#kda{
+.header{
+    position: relative;
+    height: 137px;
+    width: 100%;
+    background-color:#397be6;
+
+}
+.circulo{
+       
+		width:50px;
+		height:50px;
+		border-radius:50%;
+		border:3px solid #0b5ee3;
+		background:#0b5ee3;
+        position: absolute;
+        left: 0%;
+        
+        cursor: pointer;
+        
+        }
+        .circulo a{
+            text-decoration: none;
+            padding: 0px;;
+        }
+        
+.circulo:hover{
+    background-color:#052963 ;
+}
+.img_circulo{   
+        position: absolute;
+	    z-index:1;
+	    width:40%;
+        height:100%;
+        background-position:center;
+        left: 35%;
+        top:20%;
+		
+        }
+  #img_home{
+       
+      width:50%;
+      height:70%;
+ }
+
+
+        #logo{
+        top: 0px;
+        position:absolute;
+        left: 300px; 
+        height: 130px;
+        width: 200px;
+       
+}
+#img_logo{
+    height:90%;
+    width: 97%;}
+    
+    #kda{
     position: absolute;
-    z-index: 1;
-    left: 900px;
-    top: 50px;
+    left: 300%;
+    top: 35%;
+    width: 40%;
+    height: 12px;
     
 
 }
@@ -51,91 +92,93 @@ body {
 }
 
 .btn_search{
-    width:30px;
-    height: 28px;
-    background-color: #2f4550;
-    padding: 5px;
-    cursor: pointer;
-}
-.search_login{
+
     position: absolute;
-    width: 500px;
-    height: 50px;
-    background-color:  #0b5ee3;
-    z-index: 1;
-    top: 1000px;
-    
+    width:20%;
+    height: 25px;
+    background-color: #2f4550;
+    padding: 0px;
+    cursor: pointer;
+    top: 0px;
+    left:140% ;
 }
-.cadastro ul li{
-    display: block;
+.cadastre-se{
+    background-color: #0b5ee3;
+    position: absolute;
     width: 200px;
     height: 40px;
-    background-color:#0b5ee3;;
-    text-align: center;
-    position: relative;
-    float: left;
-    left: 170px;
-    top: -40px;
-    z-index: 1;
-    font-size: 14px;
-    line-height:40px;
-
+     left: 250%;
+     text-align: center;
+     color: white;
+     border-radius: 12px;
+     padding: 12px;
+     font-size:15px;
+     top: -10px;
+     line-height:10px ;
+     
 }
-.cadastro ul{
-    padding: 0px;
-}
-    .cadastro ul ul{
-        position: absolute;
-        top: 80px;
-        z-index: 1;
-        display: none;
-        margin-left: -170px;
-    } 
- 
-
-    
-    
-
-.cadastro ul li:hover > ul{
-    display: block;
-}
-.cadastro ul li:hover{
-    background-color: #052963;
-
-}
-.cadastro a{
+.cadastre-se a{
     text-decoration: none;
     color: white;
 }
+.menu ul li{
+   
+    z-index: 1;
+    position: relative;
+    background-color: #0b5ee3;
+    color: white;
+    float: left;
+    width: 272px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
 
-.circulo{
-		width:80px;
-		height:80px;
-		border-radius:50%;
-		border:3px solid #0b5ee3;
-		z-index:5;
-		background:#0b5ee3;
-        position: absolute;
-        left: -900px;
-        top: -30px;
-        }
-.circulo:hover{
-    background-color:#052963 ;
+  
 }
-.img{   
-        position: absolute;
-	    z-index:1;
-	    width:40px;
-        height:80px;
-        background-position:center;
-        left: 25px;
-        top:15px;
-		
-        }
-
- #img_home{
-      width:20px;
-      height:40px;
 
 
- }
+.menu ul li:hover{
+    background-color: #052963
+}
+
+
+.menu ul{
+    top: 4px;
+    padding: 0;
+    
+
+}
+.menu ul ul{
+    display: none;
+    
+    position: absolute;
+    top: 100%;
+
+}
+.menu ul li:hover > ul{
+    display: block;
+
+}
+.menu ul ul ul{
+    color: #397be6;
+    margin-left:-;
+    top:0px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    margin-left: 272px;;
+
+    
+}
+.menu ul ul li:hover{
+    background-color: #083580;
+    
+}
+.menu a{
+    cursor: pointer;
+	color: white;
+	text-decoration: none;
+}

@@ -240,6 +240,7 @@ body {
  .provas_bar a{
      text-decoration: none;
      color: white;
+    cursor: pointer;
 
  }
  .table_title{
