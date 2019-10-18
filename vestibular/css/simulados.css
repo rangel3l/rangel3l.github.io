@@ -185,6 +185,15 @@ body {
     top: 40px;
     left: -250px;
 }
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar{
+    background-color: #cfcfcf;
+}
+
+
+
  .overflow_out{
      left: 620px;
      top: 10%;
