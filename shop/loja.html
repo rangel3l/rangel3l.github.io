@@ -22,6 +22,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/imports.min.css">
     <link rel="stylesheet" href="css/simpleStore.min.css">
+   
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,14 +30,16 @@
 
 </head>
 <body>
+    
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container simpleStore">
+    <div class="container simpleStore"><h5>Compre com a gente</h5><img src="img/fotohome4.png" alt="" id="img_home" style=" width: 300px;
+          height: 200px;">
         <div class="row">
             <a class="brand" href="#"></a>
             <a class="button button-primary u-pull-right simpleStore_viewCart">
-                <i class="fa fa-shopping-cart"></i> Cart <span class="simpleCart_total"></span>
+                <i class="fa fa-shopping-cart"></i>Carrinho <span class="simpleCart_total"></span>
             </a>
         </div>
         <div class="simpleStore_container"></div>
@@ -57,7 +60,7 @@
                         <span class="item_price"></span>
                     </div>
                     <div class="simpleStore_getDetail_container">
-                        <a class="button u-pull-right simpleStore_getDetail">Details</a>
+                        <a class="button u-pull-right simpleStore_getDetail">Detalhes</a>
                     </div>
                 </div>
             </div>
@@ -80,11 +83,11 @@
                     <span class="item_price"></span>
 
                     <div class="qty">
-                        <label>QTY</label>
+                        <label>Qt</label>
                         <input type="number" value="1" min="1" step="1" class="item_Quantity">
                     </div>
                     <div class="simpleStore_options"></div>
-                    <a class="item_add button u-pull-right" href="javascript:;">Add to Cart</a>
+                    <a class="item_add button u-pull-right" href="javascript:;">Adicionar ao carrinho</a>
                 </div>
             </div>
         </div>
@@ -93,7 +96,7 @@
     <!-- Cart View -->
     <script id="cart-template" type="x-template">
         <div class="simpleStore_cart">
-            <h2>Cart</h2>
+            <h2></h2>
             <a href="#" class="close">&times;</a>
 
             <div class="row">
@@ -106,19 +109,19 @@
                         <div class="cart_info_item cart_itemcount">Items:
                             <div class="simpleCart_quantity"></div>
                         </div>
-                        <div class="cart_info_item cart_taxrate">Tax Rate:
+                        <div class="cart_info_item cart_taxrate">
                             <div class="simpleCart_taxRate"></div>
                         </div>
-                        <div class="cart_info_item cart_tax">Tax:
+                        <div class="cart_info_item cart_tax">
                             <div class="simpleCart_tax"></div>
                         </div>
-                        <div class="cart_info_item cart_shipping">Shipping:
+                        <div class="cart_info_item cart_shipping">Frete:
                             <div class="simpleCart_shipping"></div>
                         </div>
                         <div class="cart_info_item cart_total"><b>Total:
                             <div class="simpleCart_grandTotal"></div>
                         </b></div>
-                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Ir para banco <i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

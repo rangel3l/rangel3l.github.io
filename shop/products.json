@@ -1,33 +1,33 @@
 {
 	"products" : [
 		{
-			"name" : "Awesome T-shirt",
-			"price" : "35.99",
+			"name" : "Caneca- inquebrável",
+			"price" : "20.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
 			],
-			"image" : "http://upload.wikimedia.org/wikipedia/commons/c/c6/Grey_Tshirt.jpg",
-			"description" : "This is a very awesome grey T-shirt"
+			"image" : "img/caneca.png",
+			"description" : "testada oficialmente "
 		},
 		{
-			"name" : "Cool T-shirt",
-			"price" : "15.99",
+			"name" : "Bone de careca",
+			"price" : "20.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" },
 				{ "Color" : "Blue,Red" },
 			    { "OneOfAKind" : true }
 			],
-			"image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Blue_Tshirt.jpg",
-			"description" : "This is a really cool blue T-shirt"
+			"image" : "img/bone.png",
+			"description" : "Para refrescar a cabeça e esconder o penteado escroto"
 		},
 		{
-			"name" : "Fun T-shirt",
-			"price" : "15.99",
+			"name" : "Camiseta-profissional",
+			"price" : "20.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
 			],
-			"image" : "http://upload.wikimedia.org/wikipedia/commons/c/c6/Grey_Tshirt.jpg",
-			"description" : "This is another fun grey T-shirt"
+			"image" : "img/camiseta.png",
+			"description" : "Para momentos em que bate aquele sol"
 		}
 	]
 }
