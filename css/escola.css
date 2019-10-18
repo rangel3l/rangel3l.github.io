@@ -168,13 +168,13 @@ body {
  
 
 .menu ul li{
-    left: -100px;
+   
     z-index: 1;
     position: relative;
     background-color: #0b5ee3;
     color: white;
     float: left;
-    width: 240px;
+    width: 200px;
     height: 40px;
     display: block;
     text-align: center;
@@ -199,7 +199,7 @@ body {
 }
 .menu ul ul{
     display: none;
-    left: 100px;
+    left: 0px;
     position: absolute;
     top: 100%;
     border-top: 2px;
@@ -211,7 +211,7 @@ body {
 }
 .menu ul ul ul{
     color: #397be6;
-    margin-left: 243px;
+    margin-left: 200px;
     top:0px;
     position: absolute;
     z-index: 1;

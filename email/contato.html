@@ -1,53 +1,185 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>contato</title>
-    <style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;}
-        .content{display: flex;justify-content: center;}
 
-        .contato{ width: 100%; max-width: 500px;}       
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contato.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        .form{ display: flex; flex-direction: column}
-        .field{ padding: 10px; margin-bottom: 15px;border: 1px solid #ddd;border-radius:5px;font-family: Arial, Helvetica, sans-serif;font-size:16px}
-        textarea{height: 150px; }
-       
-        
-
-
-
-        
-    
-
-    </style>
 </head>
-<body>
-    
-    <section class="content">
-        <div class="contato">
-            <h3>Formulário de contato:</h3>
-            <form action="./email.php" method="post">
-               <p> Nome Completo </p> <input class="field" name="nome" placeholder="Digite seu nome aqui"><br>
-               <p>Endereço de Email:</p> <input class="field" name="email" placeholder="Digite seu Email aqui"><br>
-                <textarea class="field" name="mensagem" placeholder="Digite sua mensagem aqui"></textarea><br>
-                <input type="submit" class="field" value="Enviar">
-    
-    
-    
-            </form>
-        </div>
-    
-    
-    
-    
-    
-    
-    
-    </section>
 
-</body>
-</html>
+<body>
+
+    <header>
+        <div class="layouthead">
+            <div id="logo">
+                <a href="../index.html" id="tag_a_escola"><img src="img/fotohome4.png" id="escolamode"
+                        alt="logo da página"></a>
+
+
+            </div>
+
+
+
+            <div id="kda">
+                <form class="pesquisa">
+                    <input type="search" id="textsearch" list="historico">
+                    <img src="img/lupa.png" class="btn_search">
+                    <datalist id="historico">
+                        <option value="python"></option>
+                        <option value="home"></option>
+                        <option value="matematica"></option>
+                        <option value="historia"></option>
+                        <option value="geografia"></option>
+                        <option value="ingles"></option>
+                        <option value="quimica"></option>
+                        <option value="fisica"></option>
+                        <option value="filosofia"></option>
+                        <option value="geografia"></option>
+                        <option value="sociologia"></option>
+
+                    </datalist>
+                </form>
+            </div>
+
+            <nav class="cadastro">
+
+                <ul>
+                    <li><a href="#">Área do usuário </a>
+                        <ul>
+
+                            <a href="../cadastro/cadastro.html">
+                                <li> Registre </li>
+                            </a>
+                            <a href="../cadastro/login.html">
+                                <li> Login </li>
+                            </a>
+                            <a href="../index.html">
+                                <li> Sair </li>
+                            </a>
+                        </ul>
+                        </a>
+
+                </ul>
+
+
+
+            </nav>
+            <div class="circulo"><a href="../index.html">
+                    <div class="img">
+                        <img src="img/home.png" id="img_home"></div>
+                </a>
+            </div>
+
+
+
+
+
+
+        </div>
+        </div>
+
+
+
+    </header>
+    <div class="body_content">
+        <!-- conteudo do formulario esta no body_content2 -->
+        <div class="body_content2">
+            <div class="contato">
+                <h3>Formulário de contato:</h3>
+                <form action="./email.php" method="post">
+                    <label class="btn_size">
+                    <p> Nome Completo </p> <input class="field" name="nome" placeholder="Digite seu nome aqui"></label>
+                    <label class="btn_size">
+                    <p>Endereço de Email:</p> <input class="field" name="email" placeholder="Digite seu Email aqui"></label>
+                    <label class="btn_msg">
+                    <textarea class="field" name="mensagem" placeholder="Digite sua mensagem aqui"></textarea></label>
+                    <label class="btn_submit"><input type="submit" class="field" value="Enviar"></label>
+            
+            
+            
+                </form>
+
+        </div></div></div>
+        <footer>
+            <div class="footer">
+        
+                <nav class="foot">
+        
+                    <ul>
+                        <li> <a href="../email/contato.html">Fale conosco</a></li>
+                        <li><a href="facebook.com">Rede Sociais</a></li>
+                        <li><a href="Duvidasfrequentes.html">Dúvidas frequentes</a></li>
+                        <li><a href="Duvidasfrequentes.html">Sobre nós</a></li>
+                    </ul>
+                </nav>
+        
+        </footer>
+        </body>
+        
+        </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
