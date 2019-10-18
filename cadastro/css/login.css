@@ -188,9 +188,12 @@ body {
     border-radius: 12px;
     line-height: 30px;
     border-left: 4px #0b5ee3 solid ;
-
+    padding-top: 40px;
+    
 }    
 .field{
+  
+    text-align: center;
     width: 750px;
     left: 10%;
     background-color: #f5f3ed;
@@ -200,42 +203,43 @@ body {
     padding: 10px;}
 
     
-.date{
-    position: relative;
-    text-align: center;
-    left: 5%;
+
     
-}
-.accept{
-    left: 50%;
-    display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-bottom: black 4px solid;
-}
-#letra{
-    position: relative;
-    left: 100%;
+
+
+
 } 
+#bt_size{
+    padding-bottom: 40px;
+}
     
+.pass_size{
+    padding-top:40px;
+    top: 150px;
+    left: 0px;
+    position: absolute;
+}
+.size_btn{
+  padding-top: 50px;
+  position: absolute;
+  top: 250px;
+  left: 350px;
 
-
+}
+.name_btn{
+    position: relative;
+    padding-bottom: 400px;
+}
 
 #title_form{
     color: white;
     text-align: center;
 }
-.submit_btn{
-    position: relative;
-    top: 0px;
-    left: 40%;
+    .accept_btn{
+        position: absolute;
+        top: 20px;;
+
+}
 }
 .body_content3{
     width: 55%;
@@ -255,18 +259,8 @@ body {
         text-align: center;
     }     
     
-     .produtos{
-   border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    height: 900px;
-    width: 25%;
-    left: 70%;
-    top: 300px;
-    background-color: #94ccf2; 
     
-    
-}
+
 .title_table{
 
     left: 0px;

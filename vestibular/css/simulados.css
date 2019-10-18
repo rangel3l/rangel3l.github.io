@@ -149,7 +149,15 @@ body {
  #img_home{
       width:50%;
       height:70%;
+
  }
+ .body_content{
+    left: 0%;
+    top: 10%;
+    position: relative;
+    width:100%;
+    height: 900px;
+    background-color: #edf4fa;}
 .title_body{
     left: 2%;
     border-radius: 3px;
@@ -159,43 +167,81 @@ body {
     font-size: 17px;
     position: absolute;
     width: 800px;
-     top: 270px;
+     top: 5%;
     color: white;
 
+
+}
+.radio_size{
+    padding-top: 30px;
+   padding-left: 5px;
+    position: relative;
+    
+
+}
+.enviar{
+    position: relative;
+    text-align: center;
+    top: 40px;
+    left: -250px;
 }
  .overflow_out{
-     left: -110px;
-     top: 170px;
-     position: relative;
-     width:800px; 
-     height:800px;
-     background-color:#dee6fa; 
-     overflow: scroll;
-     height: 80vh;
+     left: 620px;
+     top: 10%;
+     position: absolute;
+     width:13%; 
+     height:600px;
+     background-color:#0b5ee3; 
+     overflow-y: scroll;
+      overflow-x:hidden;
+     
+     
 
 
 
  }
- .provas_menu{
-     position: absolute;
+ #img_geosize{
+     background-image: repeat;
+     animation: forwards;
+
+ }
+.provas_menu{
+     position: relative;
      padding: 2px;
      border-radius: 2px;
-     background-color: white;
-     left: 83%;
-     width: 150px;
-    
-     top: 500px;
+     background-color: black;
+     left: 0%;
+     width:95%;
+     z-index: 99;
+     top:-1500px;
      height: 100%;
      border: black;
+     text-align: center;
+   
+}
+
+ .overflow_in{
+     border-left: 10px;
+     position: absolute;
+     overflow-x:hidden;
+     overflow-y: scroll;
+     left:2%;
+     width: 600px;
+     height: 60%;
+     background-color: #edf4fa;
+     
+     top: 10%;}
+ 
+  
     
     
- }
+ 
  .provas_bar ul li{
      
  
    
     display: block;
-    width: 90%;
+    width: 95%;
     height: 8%;
     background-color:#0b5ee3;
     text-align: center;
@@ -225,18 +271,11 @@ body {
     }
 
  
- .overflow_in{
-     overflow: scroll;
-     left: -437%;
-     width: 437%;
-     height: 1150px;
-     background-color: #edf4fa;
-     position: relative;
-     top: -1183px;
-     
+ 
+    
 
 
- }
+ 
  .provas_bar a{
      text-decoration: none;
      color: white;
@@ -245,21 +284,25 @@ body {
  }
  .table_title{
      position: relative;
-     left: 900px;
-     top: -360px;
-     width:30% ;
+     left: 890px;
+     top: -770px;
+     width:300px ;
      background-color:#0b5ee3;
      text-align: center;
      color:white
      
      
  }
+ article{
+     padding-bottom: 12px;
+     text-align: justify;
+ }
 .produtos{
      border-radius: 5px;
      padding: 5px;
     position: absolute;
     height: 600px;
-    width: 30%;
+    width: 300px;
     left: 900px;
     top: 300px;
     background-color: #94ccf2;
@@ -300,8 +343,8 @@ table{
 }
 
 .foot{
-    top: 300px;
-    position: relative;
+    top: 1000px;
+    position: absolute;
     width: 100%;
     height: 80px;
     background-color: #0b5ee3;
