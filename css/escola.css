@@ -381,15 +381,14 @@ table{
 }
 
 #myCarousel{
-    height: 65%;
-    width: 55%;
-    position: absolute;
-    left:2%;
-    top:250px;
+     height: 65%;
+     width: 55%;
+     position: absolute;
+     left:2%;
+     top:250PX;
       min-width: 168px;
-    max-width: 100%;
-      min-height:168px;
       max-height:400px ;
+     
      
 
 
