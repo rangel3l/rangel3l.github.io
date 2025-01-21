@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/02a2fc8d2c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_223c8c25853fb136d81a2243987768a00'
+    });
+</script>
+</head>
+<body>
+
+<div class="container white-color">
+
+<header id="header">
+    <div id="config">
+        <div id="mode-noturn">
+            <div onclick="toggleSky()" id="noturn-mode-div" class="moon">
+            
+            </div>
+             
+        </div>
+        <div id="idiom" onmouseover="toggleIdiom()">
+            <div id="menu-idiom">
+                <ul>
+                    <li id="portuguese" class="dark-mode">Portuguese</li>
+                    <li id="english" class="dark-mode">English</li>
+                   
+                </ul>
+            </div>    
+            <p class="dark-mode">
+                Idioma
+            </p>
+            <ion-icon id="ionic" name="planet"></ion-icon>  
+                   
+        </div>
+    </div>
+   <div class="menu-title">
+    <div class="title dark-mode">
+        <p class="dark-mode">Rangel Gomes</p>
+       </div> 
+       
+      
+       <div class="main-menu">
+        <ul>
+          
+            <li class="menu-li dark-mode">
+                Currículo
+            </li>
+            <li  class="menu-li dark-mode">
+                Sobre
+            </li>
+        
+          
+          
+        </ul>      
+        <i id="home" class="fa fa-navicon" onclick="toggleMenu()"></i>
+        <div id="menu">
+            <div  id="close-menu">
+                <i onclick="closeMenu()"  class="fa fa-window-close" aria-hidden="true"></i>
+                <i class=""></i>
+                
+            </div> 
+          
+            <ul >
+                <li class="menu-li dark-mode">
+                    Currículo
+                </li>
+                <li  class="menu-li dark-mode">
+                    Sobre
+                </li>
+                <li class="menu-li dark-mode">
+                    Contatos
+                </li>
+                
+            </ul>      
+        </div>
+       </div>
+   </div>
+ 
+
+</header>
+<div id="content-general">
+    <section id="first-page">
+        <div class="content">
+            <p class="title-container dark-mode" >
+                Olá, sou um desenvolvedor 
+            
+               
+            
+            <p class="content-text dark-mode">
+                "Criar é uma arte que exige preparo e disposição,  
+            </p>
+            <p class="content-text dark-mode">devemos planejar de antemão para que no percurso</p> 
+            <p class="content-text dark-mode">
+                não tropeçemos e esquecemos o verdadeiro ideal 
+            </p>
+            
+            <p class="content-text dark-mode">que buscamos quando iniciamos nosso caminho". </p>
+        </div>
+        <div class="art">
+          <button id="btn-works"><p class="content-text">Veja meus trabalhos</p></button>
+
+        </div>
+        <div class="social-media">
+           
+            <p class="title-container dark-mode">
+                Redes Sociais
+            </p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/rangel-gomes/">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/rangel3l2">
+                        <i class="fa fa-github"></i>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/rangelgomes/">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
+            </ul>
+                 
+
+    </section>
+    <section id="second-page">
+        
+
+    </section>
+
+   
+  
+
+</div>
+
+<div class="arrow-down">
+    <p class="dark-mode content-text" >Desça para ver mais</p>
+    <i class="fa fa-arrow-down" onclick="scrollDown()"></i>
+</div>
+</div>
+    
+    
+    
+</body>
+<script src="app.js"></script>
+</html>
