@@ -134,8 +134,125 @@
 
     </section>
     <section id="second-page">
-        
-
+        <h2 class="section-title dark-mode">Principais Trabalhos</h2>
+        <div class="works-container">
+            <div class="work-card">
+                <img src="gifs/gif transformer.gif" alt="Transformer Calculator" class="work-card-gif">
+                <div class="work-card-content">
+                    <h3 class="work-card-title">Transformer Calculator</h3>
+                    <p class="work-card-description">
+                        Calculadora de triângulo de Durval para geradores de potência em fábricas de celulose. 
+                        <span class="description-preview">Gera relatórios de falhas e notificações para equipamentos com problemas...</span>
+                        <span class="description-full">
+                            Sistema completo para monitoramento e análise de transformadores, 
+                            incluindo geração de relatórios detalhados, alertas em tempo real 
+                            e interface intuitiva para operadores.
+                        </span>
+                    </p>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Saber mais</button>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <a href="https://github.com/rangel3l2/transformer-project" class="repo-link" target="_blank">
+                        <i class="fa fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="gifs/httpsgithub.comrangel3l2pizza-checklist-master.gif" alt="Pizza Checklist" class="work-card-gif">
+                <div class="work-card-content">
+                    <h3 class="work-card-title">Pizza Checklist</h3>
+                    <p class="work-card-description">
+                        <span class="description-preview">Sistema para realizar checklist de produtos de pizzaria como também escala semanal dos funcionários...</span>
+                        <span class="description-full">
+                            Sistema para realizar checklist de produtos de pizzaria como também escala semanal dos funcionários 
+                            que vão trabalhar em cada diária como também as tarefas que precisam ser realizadas no dia seguinte 
+                            no os ingredientes necessários para a produção de cada pizza.
+                        </span>
+                    </p>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Saber mais</button>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Node</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://pizza-checklist-master.vercel.app/" class="repo-link" target="_blank">
+                            <i class="fa fa-external-link"></i> Ver Demo
+                        </a>
+                        <a href="https://github.com/rangel3l2/pizza-checklist-master" class="repo-link" target="_blank">
+                            <i class="fa fa-github"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="gifs/gif3.gif" alt="Project 3" class="work-card-gif">
+                <div class="work-card-content">
+                    <h3 class="work-card-title">Project 3</h3>
+                    <p class="work-card-description">
+                        <span class="description-preview">Descrição breve do projeto 3...</span>
+                        <span class="description-full">
+                            Descrição completa do projeto 3, incluindo funcionalidades e tecnologias utilizadas.
+                        </span>
+                    </p>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Saber mais</button>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <a href="https://github.com/rangel3l2/project3" class="repo-link" target="_blank">
+                        <i class="fa fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="gifs/gif4.gif" alt="Project 4" class="work-card-gif">
+                <div class="work-card-content">
+                    <h3 class="work-card-title">Project 4</h3>
+                    <p class="work-card-description">
+                        <span class="description-preview">Descrição breve do projeto 4...</span>
+                        <span class="description-full">
+                            Descrição completa do projeto 4, incluindo funcionalidades e tecnologias utilizadas.
+                        </span>
+                    </p>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Saber mais</button>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <a href="https://github.com/rangel3l2/project4" class="repo-link" target="_blank">
+                        <i class="fa fa-github"></i> Ver no GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="third-page">
+        <div class="contact-container">
+            <h2 class="section-title dark-mode">Entre em Contato</h2>
+            <div class="contact-options">
+                <div class="contact-card">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>rangel-3l@hotmail.com</p>
+                    <textarea id="email-message" placeholder="Escreva sua mensagem..."></textarea>
+                    <button onclick="sendEmail()" class="contact-btn">Enviar Email</button>
+                </div>
+                <div class="contact-card">
+                    <i class="fa fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>67991160861</p>
+                    <textarea id="whatsapp-message" placeholder="Escreva sua mensagem..."></textarea>
+                    <button onclick="sendWhatsApp()" class="contact-btn">Enviar WhatsApp</button>
+                </div>
+            </div>
+        </div>
     </section>
 
    
@@ -152,5 +269,7 @@
     
     
 </body>
+<script src="app.js"></script>
+</html>
 <script src="app.js"></script>
 </html>

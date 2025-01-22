@@ -154,9 +154,6 @@ document.getElementById('english').addEventListener('click', function() {
   toggleIdiomMenu = true
 }, false);
 
-
-
-
 setInterval(function() {
   if (toggleIdiomMenu !== previousToggleIdiomMenu) {
       console.log('toggleIdiomMenu changed:', toggleIdiomMenu);
@@ -172,17 +169,98 @@ setInterval(function() {
   }
 }, 1000);
 
-function scrollDown(){
-  window.scrollTo(0, 1);
+let currentSection = 0;
+const sections = ['first-page', 'second-page', 'third-page'];
 
+let isScrolling = false;
+let lastScrollTime = Date.now();
+const scrollCooldown = 1000; // 1 second cooldown between scrolls
 
-
- 
-  alert('scroll down')
+function scrollDown() {
+    const now = Date.now();
+    if (isScrolling || now - lastScrollTime < scrollCooldown) return;
+    
+    isScrolling = true;
+    lastScrollTime = now;
+    
+    currentSection = (currentSection + 1) % sections.length;
+    document.getElementById(sections[currentSection]).scrollIntoView({ 
+        behavior: 'smooth'
+    });
+    
+    setTimeout(() => {
+        isScrolling = false;
+    }, scrollCooldown);
 }
-window.addEventListener('scroll', function() {
-  // Verifica se a rolagem vertical é maior que 100px (ajuste conforme necessário)
-  if (window.scrollY > 10) {
-      scrollDown();
-  }
+
+function scrollUp() {
+    const now = Date.now();
+    if (isScrolling || now - lastScrollTime < scrollCooldown) return;
+    
+    isScrolling = true;
+    lastScrollTime = now;
+    
+    currentSection = currentSection - 1;
+    if (currentSection < 0) currentSection = sections.length - 1;
+    
+    document.getElementById(sections[currentSection]).scrollIntoView({ 
+        behavior: 'smooth'
+    });
+    
+    setTimeout(() => {
+        isScrolling = false;
+    }, scrollCooldown);
+}
+
+window.addEventListener('wheel', function(event) {
+    if (event.deltaY > 0) {
+        scrollDown();
+    } else {
+        scrollUp();
+    }
+}, { passive: true });
+
+// Update the arrow click handler too
+document.querySelector('.arrow-down').onclick = scrollDown;
+
+document.getElementById('btn-works').addEventListener('click', function() {
+    currentSection = 1; // Set to second section
+    document.getElementById('second-page').scrollIntoView({ 
+        behavior: 'smooth'
+    });
 });
+
+function sendEmail() {
+    const message = document.getElementById('email-message').value;
+    const mailtoLink = `mailto:rangel-3l@hotmail.com?body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink;
+}
+
+function sendWhatsApp() {
+    const message = document.getElementById('whatsapp-message').value;
+    const whatsappLink = `https://wa.me/5567991160861?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+}
+
+function toggleDescription(button) {
+    const cardContent = button.closest('.work-card-content');
+    const preview = cardContent.querySelector('.description-preview');
+    const full = cardContent.querySelector('.description-full');
+    
+    if (preview.style.display !== 'none') {
+        preview.style.display = 'none';
+        full.style.display = 'inline';
+        button.textContent = 'Ver menos';
+    } else {
+        preview.style.display = 'inline';
+        full.style.display = 'none';
+        button.textContent = 'Saber mais';
+    }
+}
+
+/* ...existing code... */
+
+// Remove all GIF modal related code
+/* Delete or comment out the createGifModal function and related event listeners */
+
+/* ...existing code... */
