@@ -56,7 +56,7 @@ body{
 
 .container{
    
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -113,39 +113,59 @@ header {
     
 }
 
-#menu-idiom{
+/* Modern language menu styling */
+#menu-idiom {
     position: absolute;
+    top: 50px; /* adjust as needed */
+    right: 10px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 0.5rem 0.75rem;
     visibility: hidden;
-    margin-right: 5px;
-    top: 6.4%;
-    top: 2.5vh;
-    right: 25px;
-    z-index: 3;
-    border-radius: 12px;
-    background-color: transparent;
-    
-    
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 5;
 }
+
+#idiom:hover #menu-idiom,
+#menu-idiom:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Adjust list styles inside the language menu */
+#menu-idiom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-idiom ul li {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    font-family: texto;
+    font-size: 1rem;
+    color: var(--black-color);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#menu-idiom ul li:hover {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
 #ionic{
     color: #0b6d0b;
  
 }
-#menu-idiom > ul{
-    list-style: none;
-      
-}
-#menu-idiom > ul > li{
-    background:var(--primary-color);        
-    font-family: texto;
-    border: 2px solid var(--black-color);
-    border-radius: 12px;     
-    padding-right: 1rem;
-    padding-left: 1rem;
 
-}
-#menu-idiom > ul > li:hover{
-    background-color: var(--secundary-color);
-}
 #mode-noturn{
     
     margin-top: 2px;    
@@ -287,21 +307,18 @@ list-style: none;
 }
 
 .arrow-down{
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    z-index: 0; /* was 9999, now behind the cards */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 3rem;
-    color: var(--black-color);
-    margin-top: 2%;
-    margin-bottom: 2%;
-    cursor: pointer;
-
 }
-
 
 .arrow-down i {
     display: inline-block;
@@ -325,6 +342,12 @@ list-style: none;
 
 }
 
+@media (max-width: 480px) {
+    .arrow-down {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
 
 #imgR{
     height: 6vh;
@@ -357,73 +380,114 @@ list-style: none;
     width: 100%;
     scroll-snap-align: start;
     padding: 2rem;
+    padding-bottom: 2rem; /* reduced bottom padding */
 }
 
+/* Update works container and card styles */
 .works-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto; /* Standardize card height */
     gap: 1.5rem;
     padding: 2rem;
     max-width: 1400px;
     margin: 0 auto;
+    /* Removed fixed height */
+    max-height: calc(100vh - 150px); /* Adjust value as needed */
+    overflow-y: auto;
+    position: relative;
+    z-index: 2;
 }
 
-/* Updated GIF hover styles */
+/* Update work-card: remove fixed height and overflow clipping */
 .work-card {
+    height: auto;
+    overflow: visible;
     position: relative;
     background: var(--primary-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
     width: 100%;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
 }
 
-.work-card-gif {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-    background: var(--black-color);
-    padding: 0.5rem;
-}
-
-/* Remove all modal and hover related styles */
-
+/* Make the card content use flex layout to align bottom elements */
 .work-card-content {
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
+.work-card-description .description-full {
+    display: none;
+}
+
+/* Responsive font sizes for card titles and descriptions */
 .work-card-title {
     font-family: fontTitle;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     color: var(--black-color);
     margin-bottom: 1rem;
 }
 
 .work-card-description {
     font-family: texto;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     color: var(--black-color);
     margin-bottom: 1rem;
     line-height: 1.5;
 }
 
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .works-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(250px, auto);
+        padding: 1rem;
+    }
+}
+
+/* For small screens, turn section 2 cards into a horizontal carousel */
+@media (max-width: 768px) {
+    .works-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .work-card {
+        flex-shrink: 0;
+        min-width: 80%; /* Adjust width as needed */
+        scroll-snap-align: start;
+        /* Remove centering if not needed */
+        margin: 0 0.5rem;
+    }
+}
+
+/* Standardize image size for all cards */
+.work-card-gif {
+    width: 100%;
+    height: 150px; /* fixed height so images are equal */
+    object-fit: contain;
+    background: var(--black-color);
+    padding: 0.5rem;
+}
+
+/* Update tech-stack block: remove scrollbar hiding */
 .tech-stack {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;      /* prevent wrapping */
     gap: 0.5rem;
-    margin-top: 1rem;
+    overflow-x: auto;       /* enable horizontal scrolling */
 }
 
-.tech-tag {
-    background: var(--secundary-color);
-    color: var(--black-color);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-family: texto;
-}
-
+/* Responsive adjustments */
 @media (max-width: 1200px) {
     .works-container {
         grid-template-columns: repeat(2, 1fr);
@@ -443,6 +507,18 @@ list-style: none;
     
     .work-card-gif {
         height: 200px;
+    }
+
+    .work-card-title {
+        font-size: 1.2rem;
+    }
+
+    .work-card-description {
+        font-size: 0.9rem;
+    }
+
+    .tech-tag {
+        font-size: 0.8rem;
     }
 }
 
@@ -470,8 +546,40 @@ list-style: none;
         display: none;
         
     }
-
+    /* Hide the "Veja meus trabalhos" button (already in .art) */
+    .art { 
+        display: none;
+    }
+    /* Hide original social media from first-page */
+    .social-media {
+        display: none;
+    }
+    /* Style the footer social media */
+    #footer-social {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        background: var(--secundary-color);
+    }
+    #footer-social .social-media-footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #footer-social .social-media-footer ul li {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+    #footer-social .social-media-footer a {
+        font-size: 1.5rem; /* smaller icons */
+        color: var(--black-color);
+        transition: color 0.3s;
+    }
+    #footer-social .social-media-footer a:hover {
+        color: var(--primary-color);
+    }
 }
+
 .social-media{
     display: flex;
     flex-direction: column;
@@ -531,9 +639,10 @@ list-style: none;
     width: 100%;
     scroll-snap-align: start;
     padding: 2rem;
+    padding-top: 4rem;  /* increased top padding */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;  /* changed from center */
 }
 
 .contact-container {
@@ -545,9 +654,15 @@ list-style: none;
 .section-title {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;  /* reduced from 3rem */
     color: var(--black-color);
     font-family: fontTitle;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
 }
 
 .contact-options {
@@ -673,7 +788,44 @@ list-style: none;
     }
 }
 
-/* ...existing code... */
+/* For small screens, turn section 3 contact cards into a horizontal carousel */
+@media (max-width: 768px) {
+    .contact-options {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .contact-card {
+        flex-shrink: 0;
+        min-width: 80%; /* Adjust width as needed */
+        scroll-snap-align: start;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Global responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Use min-height to allow content expansion on smaller devices */
+.container {
+    min-height: 100vh;
+    /* ...existing code... */
+}
+
+/* Responsive title font size adjustments for very small screens */
+@media (max-width: 480px) {
+    .title p {
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+    .main-menu {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+}
 
 .repo-links {
     display: flex;
@@ -685,8 +837,6 @@ list-style: none;
     flex: 1;
     justify-content: center;
 }
-
-/* ...existing code... */
 
 #btn-works {
     background: var(--secundary-color);
@@ -731,7 +881,25 @@ list-style: none;
     font-weight: 600;
 }
 
-/* ...existing code... */
+/* Responsive text adjustments for section 1 when viewport height is limited */
+@media (max-height: 700px) {
+    #first-page .title-container {
+        font-size: clamp(1.5rem, 4vw, 2.5rem); /* scales down */
+    }
+    #first-page .content-text {
+        font-size: clamp(0.8rem, 3vw, 1.5rem); /* scales down */
+    }
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #e1e4e8; /* badge-like background */
+    color: #0366d6;           /* text color similar to GitHub */
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin: 0.2rem;
+}
 
 
 
